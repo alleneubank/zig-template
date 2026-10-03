@@ -29,7 +29,7 @@ pub fn build(b: *std.Build) void {
     const run_cmd = b.addRunArtifact(exe);
     run_step.dependOn(&run_cmd.step);
     run_cmd.step.dependOn(b.getInstallStep());
-    if (b.args) |args| run_cmd.addArgs(args);
+    run_cmd.addPassthruArgs();
 
     // Tests
     const test_step = b.step("test", "Run unit tests");
@@ -51,6 +51,6 @@ pub fn build(b: *std.Build) void {
 
     // Format check
     const fmt_step = b.step("fmt", "Check source formatting");
-    const fmt = b.addFmt(.{ .paths = &.{ "src", "build.zig" } });
+    const fmt = b.addFmt(.{ .paths = b.pathList(&.{ "src", "build.zig" }), .check = true });
     fmt_step.dependOn(&fmt.step);
 }
