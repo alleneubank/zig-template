@@ -4,7 +4,7 @@ Zig project template with agentic-first tooling.
 
 ## Quick Reference
 
-- **Enter dev shell:** `nix develop` (or `direnv allow` with .envrc)
+- **Install tools:** `mise install --locked` (then `direnv allow` with .envrc, or prefix commands with `mise exec --`)
 - **Build:** `zig build`
 - **Run:** `zig build run`
 - **Test:** `zig build test`
@@ -21,7 +21,8 @@ src/main.zig     # Executable entry point (imports library)
 build.zig        # Build script (test, docs, fmt, run steps)
 build.zig.zon    # Package manifest (name, version, deps)
 .ziglint.zon     # Linter configuration
-flake.nix        # Nix dev environment (Zig 0.17.0, ziglint)
+mise.toml        # Toolchain pins (Zig 0.17.0, ziglint, lefthook, jq, ripgrep)
+mise.lock        # Locked tool URLs and checksums (`mise lock`)
 ```
 
 ## Build Steps
@@ -37,8 +38,9 @@ flake.nix        # Nix dev environment (Zig 0.17.0, ziglint)
 
 ## Tooling
 
-- **Zig** — stable 0.17.0 via `mitchellh/zig-overlay` (nix flake)
-- **ziglint** — static analysis (prebuilt binary via nix)
+- **mise** — toolchain manager; `mise.toml` pins exact versions, `mise.lock` pins per-platform checksums for linux-x64, linux-arm64, macos-x64, macos-arm64
+- **Zig** — stable 0.17.0 (mise core backend)
+- **ziglint** — static analysis (prebuilt GitHub release; upstream ships no macos-x64 build)
 - **lefthook** — git hooks (fmt, lint, test on pre-commit)
 - **zig fmt** — canonical formatter (built into zig)
 
