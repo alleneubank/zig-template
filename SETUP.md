@@ -33,6 +33,10 @@ const mod = b.addModule("my_tool", .{
 .name = .my_tool,
 ```
 
+Renaming invalidates `.fingerprint`. Run `zig build`; it fails with
+`invalid fingerprint ... use this value: 0x...`. Paste that value into
+`.fingerprint`.
+
 ### `src/main.zig`
 ```zig
 const lib = @import("my_tool");
