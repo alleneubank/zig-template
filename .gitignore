@@ -3,9 +3,7 @@ zig-out/
 zig-cache/
 .zig-cache/
 
-# Nix
-result
-result-*
+# direnv
 .direnv/
 
 # Editor

@@ -44,15 +44,11 @@ Update the doc comment on line 1:
 //! my-tool library.
 ```
 
-### `flake.nix`
-```nix
-description = "my-tool — short description";
-```
-
-## 3. Enter the dev shell
+## 3. Install the toolchain
 
 ```bash
-nix develop
+mise install --locked
+direnv allow   # optional: activates the toolchain on cd
 ```
 
 ## 4. Verify
