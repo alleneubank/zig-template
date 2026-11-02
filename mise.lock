@@ -86,24 +86,24 @@ url_api = "https://api.github.com/repos/jqlang/jq/releases/assets/453012782"
 provenance = "github-attestations"
 
 [[tools."github:rockorager/ziglint"]]
-version = "0.6.2"
+version = "0.8.0"
 backend = "github:rockorager/ziglint"
-specifiers = ["0.6.2"]
+specifiers = ["0.8.0"]
 
 [tools."github:rockorager/ziglint"."platforms.linux-arm64"]
-checksum = "sha256:478a090bd332317911b215d2a8fe3fa05501fad2e185ee47b81e27414be891e2"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-aarch64-linux.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629322"
+checksum = "sha256:480584b967ae40576854408c6da45691d3fedcb47c85879a09b91ebf7dd00194"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.0/ziglint-aarch64-linux.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/693415651"
 
 [tools."github:rockorager/ziglint"."platforms.linux-x64"]
-checksum = "sha256:404dabe44583b415fd185f9761dd72598cdac90beea38d1630b6305ddcaee6be"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-x86_64-linux.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629321"
+checksum = "sha256:2a98a92fae7ca0b011abbca9c547d26a0ae27d216d9f191197157fc6aeea20ff"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.0/ziglint-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/693415652"
 
 [tools."github:rockorager/ziglint"."platforms.macos-arm64"]
-checksum = "sha256:f5342c424df2e0a244d70cad255c70e40033b05d3a759d62417c8d5bd4c3e8b0"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-aarch64-macos.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629325"
+checksum = "sha256:45a31db80b633102aec563beed8623a61e589581c0c8b80ad62afb72e12c2f98"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.0/ziglint-aarch64-macos.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/693415654"
 
 [[tools.zig]]
 version = "0.17.0"
