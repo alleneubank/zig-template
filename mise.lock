@@ -86,43 +86,43 @@ url_api = "https://api.github.com/repos/jqlang/jq/releases/assets/453012782"
 provenance = "github-attestations"
 
 [[tools."github:rockorager/ziglint"]]
-version = "0.6.2"
+version = "0.8.1"
 backend = "github:rockorager/ziglint"
-specifiers = ["0.6.2"]
+specifiers = ["0.8.1"]
 
 [tools."github:rockorager/ziglint"."platforms.linux-arm64"]
-checksum = "sha256:478a090bd332317911b215d2a8fe3fa05501fad2e185ee47b81e27414be891e2"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-aarch64-linux.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629322"
+checksum = "sha256:78469776102d2559828b38b234bc11d49b4a374ff073d95a10d1de190016bcf0"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.1/ziglint-aarch64-linux.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/720764681"
 
 [tools."github:rockorager/ziglint"."platforms.linux-x64"]
-checksum = "sha256:404dabe44583b415fd185f9761dd72598cdac90beea38d1630b6305ddcaee6be"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-x86_64-linux.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629321"
+checksum = "sha256:c0c86483c251b80114e99c90b3fa45867cb4a07809e00844640446cf75d43e4a"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.1/ziglint-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/720764682"
 
 [tools."github:rockorager/ziglint"."platforms.macos-arm64"]
-checksum = "sha256:f5342c424df2e0a244d70cad255c70e40033b05d3a759d62417c8d5bd4c3e8b0"
-url = "https://github.com/rockorager/ziglint/releases/download/v0.6.2/ziglint-aarch64-macos.tar.gz"
-url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/638629325"
+checksum = "sha256:fdb24f662e51c3ba452be047f138b6d365788149779296c5f6fe9229c192054b"
+url = "https://github.com/rockorager/ziglint/releases/download/v0.8.1/ziglint-aarch64-macos.tar.gz"
+url_api = "https://api.github.com/repos/rockorager/ziglint/releases/assets/720764679"
 
 [[tools.zig]]
-version = "0.17.0"
+version = "0.17.1"
 backend = "core:zig"
-specifiers = ["0.17.0"]
+specifiers = ["0.17.1"]
 
 [tools.zig."platforms.linux-arm64"]
-checksum = "sha256:9e8d11661d4ae3bd57702a3832781e23ad151dde5798e16a5ccd503f65234ff8"
-url = "https://ziglang.org/download/0.17.0/zig-aarch64-linux-0.17.0.tar.xz"
+checksum = "sha256:a1546d5646eb184437918d6635ca6b762a0e889eac09cef720ee7a1ed3fe7795"
+url = "https://ziglang.org/download/0.17.1/zig-aarch64-linux-0.17.1.tar.xz"
 
 [tools.zig."platforms.linux-x64"]
-checksum = "sha256:1cbe9df9f27e6b78d14ccbca43b6703a404ef79ef1c463de901d7f088d4e2026"
-url = "https://ziglang.org/download/0.17.0/zig-x86_64-linux-0.17.0.tar.xz"
-
-[tools.zig."platforms.macos-arm64"]
-checksum = "sha256:b607e9b9234790a008116ae5bdb71c6243b84b9fb42a53a9e70fde41c06c536a"
-url = "https://ziglang.org/download/0.17.0/zig-aarch64-macos-0.17.0.tar.xz"
+checksum = "sha256:3581863e3cbcfd0fce0efc682ce7e9e93da96668a977791d356a26d2a7e9b17a"
+url = "https://ziglang.org/download/0.17.1/zig-x86_64-linux-0.17.1.tar.xz"
 provenance = "minisign"
 
+[tools.zig."platforms.macos-arm64"]
+checksum = "sha256:75f1bc7a1e9852f17ec9a0c1895f767c4ec56d46bc8a834920eece1d0359dd8d"
+url = "https://ziglang.org/download/0.17.1/zig-aarch64-macos-0.17.1.tar.xz"
+
 [tools.zig."platforms.macos-x64"]
-checksum = "sha256:4f9a1c5269aa17ebda5e6d3c2b89d6cbf36f7d2b22a0306e9ab98f25f95529c6"
-url = "https://ziglang.org/download/0.17.0/zig-x86_64-macos-0.17.0.tar.xz"
+checksum = "sha256:9af07b20319fbd0c92ee46ad23e81d6a782b1aaea2cfb8dcbff35f1d2c7ddbb7"
+url = "https://ziglang.org/download/0.17.1/zig-x86_64-macos-0.17.1.tar.xz"
